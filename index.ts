@@ -24,6 +24,6 @@ const newsFeed$ = new Observable<NewsItem>((subscriber) => {
   }, 6000);
 
   setTimeout(() => {
-    subscriber.next({ category: 'Sports', content: 'E' });
+    subscriber.next({ category: 'Business', content: 'E' });
   }, 7000);
 });
