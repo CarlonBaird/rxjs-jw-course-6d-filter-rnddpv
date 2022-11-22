@@ -27,3 +27,5 @@ const newsFeed$ = new Observable<NewsItem>((subscriber) => {
     subscriber.next({ category: 'Business', content: 'E' });
   }, 7000);
 });
+
+newsFeed$.subscribe((item) => console.log(item));
